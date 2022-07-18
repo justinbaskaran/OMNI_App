@@ -13,5 +13,5 @@ Add support for smart home opener
 ## WireFrame
 Final Product will look more polished
 
-![alt text](wireFrame.png)
+![alt text](WireFrame.png)
 
