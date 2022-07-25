@@ -15,3 +15,23 @@ Final Product will look more polished
 
 ![alt text](WireFrame.png)
 
+
+
+## Setup
+To get the app to work on xcode, you will need to create a Constants.swift file 
+and add the following modified as per your project
+
+import Foundation
+
+class Constants {
+    func Constants(){}
+    let lightSwitch="device ID for light switch"
+    let tv="device ID for tv"
+    let apiToken="api token from Samsung Developer API...PAT token (Personal Access Token) "
+    let bingSpammerURL="url for bing spammer url"
+
+
+}
+
+
+
