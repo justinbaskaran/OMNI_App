@@ -44,11 +44,7 @@ class ViewController: UIViewController {
         doRequest(url: url,data: json)
     }
     
-  
 
-    
-    
-    
     @IBAction func backwardButton(_ sender: Any) {
         let url = "https://api.smartthings.com/v1/devices/"+constants.tv+"/commands"
 
@@ -84,56 +80,6 @@ class ViewController: UIViewController {
 
         // prepare json data
         let json = "{'commands':[{'component': 'main','capability': 'mediaPlayback','command': 'fastForward'}]}"
-    
-
-        doRequest(url: url,data: json)
-    }
-    
-    @IBAction func upButton(_ sender: Any) {
-        let url = "https://api.smartthings.com/v1/devices/"+constants.tv+"/commands"
-
-        // prepare json data
-        let json = ""
-    
-
-        doRequest(url: url,data: json)
-    }
-    
-    @IBAction func rightButton(_ sender: Any) {
-        let url = "https://api.smartthings.com/v1/devices/"+constants.tv+"/commands"
-
-        // prepare json datae
-        let json = "{'commands':[{'component':'main','capability':'mediaInputSource','command':'SendRemoteKey','argument':'KEY_RIGHT'}]}"
-    
-
-        doRequest(url: url,data: json)
-    }
-    
-    @IBAction func downButton(_ sender: Any) {
-        let url = "https://api.smartthings.com/v1/devices/"+constants.tv+"/commands"
-
-        // prepare json data
-        let json = ""
-    
-
-        doRequest(url: url,data: json)
-    }
-    
-    @IBAction func leftButton(_ sender: Any) {
-        let url = "https://api.smartthings.com/v1/devices/"+constants.tv+"/commands"
-
-        // prepare json data
-        let json = ""
-    
-
-        doRequest(url: url,data: json)
-    }
-    
-    @IBAction func homeButton(_ sender: Any) {
-        let url = "https://api.smartthings.com/v1/devices/"+constants.tv+"/commands"
-
-        // prepare json data
-        let json = "{\"capability\":\"mediaInputSource\",\"command\":\"setInputSource\"}"
     
 
         doRequest(url: url,data: json)
