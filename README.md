@@ -25,10 +25,16 @@ import Foundation
 
 class Constants {
     func Constants(){}
+
     let lightSwitch="device ID for light switch"
+
     let tv="device ID for tv"
+
     let apiToken="api token from Samsung Developer API...PAT token (Personal Access Token) "
+
     let bingSpammerURL="url for bing spammer url"
+
+
 
 
 }
