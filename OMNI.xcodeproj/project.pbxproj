@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		515B759B288E51E0003ABE0B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515B759A288E51E0003ABE0B /* Constants.swift */; };
 		51B2798E2884CD6F00D719CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B2798D2884CD6F00D719CF /* AppDelegate.swift */; };
 		51B279902884CD6F00D719CF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B2798F2884CD6F00D719CF /* SceneDelegate.swift */; };
 		51B279922884CD6F00D719CF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B279912884CD6F00D719CF /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		515B759A288E51E0003ABE0B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		51A9B4F42884EFB000A4A51E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		51B2798A2884CD6F00D719CF /* OMNI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OMNI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B2798D2884CD6F00D719CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -25,6 +27,7 @@
 		51B279962884CD7100D719CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51B279992884CD7100D719CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51B2799B2884CD7100D719CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51DE47CB28A4B4DE0029C58F /* OMNI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OMNI.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +60,7 @@
 		51B2798C2884CD6F00D719CF /* OMNI */ = {
 			isa = PBXGroup;
 			children = (
+				51DE47CB28A4B4DE0029C58F /* OMNI.entitlements */,
 				51B2798D2884CD6F00D719CF /* AppDelegate.swift */,
 				51B2798F2884CD6F00D719CF /* SceneDelegate.swift */,
 				51B279912884CD6F00D719CF /* ViewController.swift */,
@@ -64,6 +68,7 @@
 				51B279962884CD7100D719CF /* Assets.xcassets */,
 				51B279982884CD7100D719CF /* LaunchScreen.storyboard */,
 				51B2799B2884CD7100D719CF /* Info.plist */,
+				515B759A288E51E0003ABE0B /* Constants.swift */,
 			);
 			path = OMNI;
 			sourceTree = "<group>";
@@ -142,6 +147,7 @@
 				51B279922884CD6F00D719CF /* ViewController.swift in Sources */,
 				51B2798E2884CD6F00D719CF /* AppDelegate.swift in Sources */,
 				51B279902884CD6F00D719CF /* SceneDelegate.swift in Sources */,
+				515B759B288E51E0003ABE0B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +293,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OMNI/OMNI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G8DC9X92YD;
@@ -304,9 +311,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.justinbaskaran.OMNI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -315,6 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OMNI/OMNI.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G8DC9X92YD;
@@ -332,9 +342,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.justinbaskaran.OMNI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};
